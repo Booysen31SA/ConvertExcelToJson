@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+        integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <title>Convert Excel to Json</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Convert Excel to JSON</h1>
+            <p>Add file to be converted</p>
+        </header>
+
+        <form action="">
+            <input class="form-control" type="file" id="input" accept=".xls, .xlsx">
+            <button id="button">Convert</button>
+            <button id="saveJson">Save Json data</button>
+            <input class="reset" id="reset" type="reset">
+            <p id="errorMessage"></p>
+        </form>
+
+        <textarea id="jsondata">
+            
+        </textarea>
+    </div>
+
+
+</body>
+
+
+</html>
